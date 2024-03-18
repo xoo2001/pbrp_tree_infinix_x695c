@@ -24,7 +24,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 # Virtual A/B OTA
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 
-# Inherit from note10pro device
+# Inherit from X695C device
 $(call inherit-product, device/infinix/X695C/device.mk)
 
 # Inherit some common Twrp stuff.
@@ -32,7 +32,7 @@ $(call inherit-product, vendor/pb/config/common.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := X695C
-PRODUCT_NAME := twrp_X695C
+PRODUCT_NAME := omni_X695C
 PRODUCT_BRAND := Infinix
 PRODUCT_MODEL := Note 10 Pro
 PRODUCT_MANUFACTURER := Infinix
@@ -43,4 +43,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="sys_tssi_64_infinix-user 11 RP1A.200720.011 156471 release-keys"
 
 BUILD_FINGERPRINT := Infinix/X695C-GL/Infinix-X695C:11/RP1A.200720.011/221114V356:user/release-keys
-
