@@ -71,3 +71,6 @@
 # Removable
 /external_sd              vfat     /dev/block/mmcblk0p1         /dev/block/mmcblk0          flags=fsflags=utf8;display="MicroSD";storage;wipeingui;removable                      
 /usb-otg                  vfat     /dev/block/sdd1              /dev/block/sdd              flags=fsflags=utf8;display="OTG";storage;wipeingui;removable
+
+## Internal storage (for PBRP)
+/storage                 f2fs     /data/media                                              flags=display="Internal Storage";usermrf;backup=1;fsflags="bind";removable
